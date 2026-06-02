@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "version": "1.0",
+    "name": "Youtube Hider",
+    "icons": {
+        "48": "ExtensionIcon.png",
+        "96": "ExtensionIcon.png"
+    },
+    "permissions": ["activeTab"],
+ 
+    "content_scripts": [
+        {
+            "matches": ["*://www.youtube.com/watch*"],
+            "js": ["main.js"]
+        }
+    ]
+}
